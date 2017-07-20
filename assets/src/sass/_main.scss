@@ -17,6 +17,7 @@
 /*---------- Main ----------*/
 h1,h2,h3,h4 {
   margin: 0;
+  color: #dark;
 }
 body {
   background: $light;
@@ -24,6 +25,6 @@ body {
 
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
-  background: $black;
-  border: none;
+  background: $white;
+  padding: 14px;
 }
