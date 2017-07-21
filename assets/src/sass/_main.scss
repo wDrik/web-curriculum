@@ -17,7 +17,7 @@
 /*---------- Main ----------*/
 h1,h2,h3,h4 {
   margin: 0;
-  color: #dark;
+  color: $dark;
 }
 body {
   background: $light;
@@ -27,4 +27,6 @@ body {
 .navbar-default{
   background: $white;
   padding: 14px;
+  margin-top: 670px;
+  margin-bottom: 0;
 }
