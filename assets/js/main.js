@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     if(scrollTop < height){
       $("#border").css({
-        "margin-bottom": pixels * 71 +"px",
+        "margin-bottom": pixels * 71 +"px"
       });
 
       $("#banner").css({

@@ -26,7 +26,36 @@ body {
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
   background: $white;
-  padding: 14px;
   margin-top: 670px;
   margin-bottom: 0;
+  border-bottom: 1px solid $light-gray;
+  height: 72px;
+}
+
+.navbar-header {
+  h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+
+    span {
+      color: $blue-theme;
+      font-weight: 600;
+    }
+  }
+  p{
+    font-size: 0.65em;
+    font-weight: 100;
+  }
+}
+
+#navbar {
+  ul>li>a {
+    font-size: 1.2em;
+    padding: 24px 14px;
+    &:hover{
+      color: $blue-theme;
+      border-bottom: 4px solid $blue-theme;
+      transition: 0.2s;
+    }
+  }
 }
