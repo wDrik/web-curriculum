@@ -2,18 +2,27 @@ $(document).ready(function(){
 
   // Paralax effect
   var height = $(window).height();
+
   $(document).scroll(function(){
     var scrollTop = $(this).scrollTop();
-    var pixels = scrollTop / 70;
+    var pixels = scrollTop / 80;
 
     if(scrollTop < height){
-      $("#border").css({
-        "margin-bottom": pixels * 71 +"px"
+      $('#border').css({
+        'margin-top': pixels * 80 +'px',
+        'opacity' : (1 - scrollTop/2000)
       });
+    }
+  });
 
-      $("#banner").css({
-        "background-position":"center -"+ pixels * 10 +"px"
-      });
+  // Navigation Script
+  $(document).scroll(function(){
+    var scrollTop = $(this).scrollTop();
+
+    if(scrollTop >= 672){
+      $('#navigation').addClass('navbar-fixed-top');
+    }else {
+      $('#navigation').removeClass('navbar-fixed-top').addClass('navbar-static');;
     }
   });
 

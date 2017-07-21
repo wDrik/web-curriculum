@@ -26,10 +26,10 @@ body {
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
   background: $white;
-  margin-top: 670px;
   margin-bottom: 0;
   border-bottom: 1px solid $light-gray;
   height: 72px;
+  border-radius: 0;
 }
 
 .navbar-header {
@@ -49,6 +49,7 @@ body {
 }
 
 #navbar {
+  padding: 0;
   ul>li>a {
     font-size: 1.2em;
     padding: 24px 14px;

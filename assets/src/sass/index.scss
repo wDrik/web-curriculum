@@ -2,23 +2,22 @@
 @import "variables";
 
 #banner {
-  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 672px;
   top: 0;
   left: 0;
-  z-index: -1;
-  background-image: url("../img/banner4.jpg");
+  z-index: 1;
+  background: url("../img/banner4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center 0;
-  background-repeat: no-repeat;
-  overflow: hidden;
 
   #banner-wrapper {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
-
+    transition: all ease 1s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,8 @@
       background: transparent;
       border-radius: 100%;
       border: 1px solid $white;
+      opacity: 1;
+
 
       display: flex;
       justify-content: center;
@@ -72,4 +73,5 @@
   width: 100%;
   height: 1000px;
   background: $white;
+  //z-index: 200;
 }
