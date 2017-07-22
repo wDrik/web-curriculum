@@ -68,9 +68,9 @@
   }
 }
 
-#perfil {
+.title {
   background: $white;
-  padding-top: 40px;
+  padding: 20px 0;
   text-align: center;
 
   display: flex;
@@ -100,8 +100,6 @@
     padding: 30px 0;
     font-weight: 100;
   }
-
-
 }
 
 #wrapper-perfil{
@@ -196,6 +194,24 @@
 
   #rightSkills {
     width: 50%;
+
+    h4 {
+      text-align: center;
+      font-weight: 100;
+      padding: 20px 0;
+    }
+
+    .skills-wrapper {
+      padding: 8px 0;
+      display: flex;
+      text-align: center;
+
+      p{
+        font-weight: 100;
+        margin-top: 4px;
+      }
+    }
+
   }
 
 

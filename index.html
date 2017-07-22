@@ -52,7 +52,7 @@
   </div>
 </nav>
 
-<section id="perfil" class="container">
+<section class="container title">
   <h1>Perfil<span class="icon-attach-1"></span></h1>
   <h3>Bem-vindo ao meu Currículo online!</h3>
 </section>
@@ -79,33 +79,45 @@
   </div>
 </section>
 
-<section id="skills" class="container">
+<section class="container title">
+  <h1>Habilidades<span class="icon-attach-1"></span></h1>
+</section>
 
+<section id="skills" class="container">
   <div id="leftSkills">
     <h4><span class="icon-ok"></span> Habilidades</h4>
 
     <div class="progress-skill">
-      <p>Front-End <span class="inner-bar-count"></span></p>
+      <p>Front-End <span id="front-bar-count"></span></p>
       <div class="under-bar">
-        <div class="inner-bar">
+        <div id="front-bar" class="inner-bar">
 
         </div>
       </div>
     </div>
 
     <div class="progress-skill">
-      <p>Back-End <span class="inner-bar-count"></span></p>
+      <p>Back-End <span id="back-bar-count"></span></p>
       <div class="under-bar">
-        <div class="inner-bar">
+        <div id="back-bar" class="inner-bar">
 
         </div>
       </div>
     </div>
 
     <div class="progress-skill">
-      <p>Design <span class="inner-bar-count"></span></p>
+      <p>Design <span id="design-bar-count"></span></p>
       <div class="under-bar">
-        <div class="inner-bar">
+        <div id="design-bar" class="inner-bar">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-skill">
+      <p>Inglês <span id="english-bar-count"></span></p>
+      <div class="under-bar">
+        <div id="english-bar" class="inner-bar">
 
         </div>
       </div>
@@ -115,15 +127,61 @@
 
 
   <div id="rightSkills">
-  </div>
+    <h4><span class="icon-ok"></span> Habilidades 2</h4>
 
+    <div class="skills-wrapper">
+      <div>
+        <input value="75" class="dial">
+        <p>HTML5</p>
+      </div>
+      <div>
+        <input value="75" class="dial">
+        <p>CSS3</p>
+      </div>
+      <div>
+        <input value="60" class="dial">
+        <p>SASS</p>
+      </div>
+    </div>
+
+    <div class="skills-wrapper">
+      <div>
+        <input value="60" class="dial">
+        <p>Bootstrap</p>
+      </div>
+      <div>
+        <input value="40" class="dial">
+        <p>JavaScript</p>
+      </div>
+      <div>
+        <input value="60" class="dial">
+        <p>jQuery</p>
+      </div>
+    </div>
+
+    <div class="skills-wrapper">
+      <div>
+        <input value="50" class="dial">
+        <p>PHP</p>
+      </div>
+      <div>
+        <input value="50" class="dial">
+        <p>MySQL</p>
+      </div>
+      <div>
+        <input value="60" class="dial">
+        <p>GitHub</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="assets/js/plugin.js"></script>
+<script src="assets/js/knob-plugin.min.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>
