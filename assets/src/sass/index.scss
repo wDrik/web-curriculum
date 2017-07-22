@@ -96,7 +96,7 @@
       left: 46.5%;
     }
   }
-  h4 {
+  h3 {
     padding: 30px 0;
     font-weight: 100;
   }
@@ -143,9 +143,8 @@
 
 #skills{
   height: 600px;
+
   display: flex;
-  //justify-content: flex-start;
-  //align-items: flex-start;
   flex-wrap: wrap;
 
   #leftSkills {
@@ -153,29 +152,36 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    //justify-content: flex-start;
-    //align-items: flex-start;
 
-
+    h4 {
+      text-align: center;
+      font-weight: 100;
+      padding: 20px 0;
+    }
 
     .progress-skill {
-      width: 100%;
-      margin-left: 0 !important;
+      width: 90%;
 
       p {
         width: 100%;
         font-size: 1em;
         color: $light-dark;
+        margin-bottom: 6px;
 
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          margin: 0;
+        }
       }
 
       .under-bar {
-        width: 90%;
+        width: 100%;
         height: 10px;
         background: $light;
         margin-bottom: 12px;
         margin-left: 0 !important;
-
 
         .inner-bar{
           background: $blue-theme;
