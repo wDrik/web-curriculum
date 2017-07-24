@@ -19,16 +19,28 @@ h1,h2,h3,h4 {
   margin: 0;
   color: $light-dark;
 }
-body {
-  //background: $light;
-}
 .icon-ok {
   color: $blue-theme;
 }
-
 .icon-linkedin-2 {color: #0077b5;}
 .icon-github-circled-alt2 {color: #24292e}
 .icon-stackoverflow {color: #f48024}
+
+
+/*---------- Go Top ----------*/
+#goTop {
+  display: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  color: $white;
+  font-size: 1.2em;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  padding: 8px;
+}
+
 
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
@@ -152,4 +164,3 @@ body {
     color: $white;
   }
 }
-

@@ -93,5 +93,18 @@ $(document).ready(function(){
     });
   });
 
+  // Go top Fade In
+  $(window).scroll(function(){
+    if($(this).scrollTop() >= 1400){
+      $('#goTop').fadeIn('slow');
+    }else {
+      $('#goTop').fadeOut('slow');
+    }
+  });
+
+  // Go top
+  $('#goTop').click(function(){
+    $('body, html').animate({scrollTop:0}, 1000);
+  });
 
 });
