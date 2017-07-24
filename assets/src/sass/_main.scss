@@ -22,6 +22,13 @@ h1,h2,h3,h4 {
 body {
   //background: $light;
 }
+.icon-ok {
+  color: $blue-theme;
+}
+
+.icon-linkedin-2 {color: #0077b5;}
+.icon-github-circled-alt2 {color: #24292e}
+.icon-stackoverflow {color: #f48024}
 
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
@@ -31,12 +38,10 @@ body {
   height: 72px;
   border-radius: 0;
 }
-
 .navbar-header {
   h4 {
     font-size: 1.1em;
     font-weight: 400;
-
     span {
       color: $blue-theme;
       font-weight: 600;
@@ -60,3 +65,91 @@ body {
     }
   }
 }
+
+/*---------- Title ----------*/
+.title {
+  background: $white;
+  padding: 60px 0;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    width: 400px;
+    padding: 30px 0;
+    border-bottom: 1px solid $light-gray;
+    font-weight: 200;
+    position: relative;
+
+    span{
+      font-size: 0.3em;
+      color: $blue-theme;
+      background: $white;
+      border: 1px solid $light-gray;
+      border-radius: 100%;
+      padding: 6px;
+      position: absolute;
+      bottom: -12px;
+      left: 46.5%;
+    }
+  }
+  h3 {
+    padding: 30px 0 0 0;
+    font-weight: 100;
+  }
+}
+
+/*---------- Footer ----------*/
+#footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  #top {
+    width: 100%;
+    height: 80px;
+    background: $dark;
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        a {
+          .icon-size {
+            font-size: 1.6em;
+            color: $white;
+            border-radius: 100%;
+            padding: 6px;
+          }
+          .icon-linkedin-2 {background: #0077b5;}
+          .icon-github-circled-alt2 {background: #24292e; margin: 0 10px;}
+          .icon-stackoverflow {background: #f48024;}
+        }
+        &:hover {
+          margin-top: -4px;
+          -webkit-transition: all ease 0.2s;
+          -moz-transition: all ease 0.2s;
+          -ms-transition: all ease 0.2s;
+          -o-transition: all ease 0.2s;
+          transition: all ease 0.2s;
+        }
+      }
+    }
+  }
+
+  #bottom{
+    width: 100%;
+    height: 60px;
+    background: $black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+  }
+}
+

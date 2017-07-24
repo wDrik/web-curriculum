@@ -26,20 +26,20 @@ $(document).ready(function(){
   });
 
   // Animate Progress Bar
-  $('#front-bar').animate({ width: "80%" }, 2000);
-  $('#back-bar').animate({ width: "60%" }, 2000);
+  $('#front-bar').animate({ width: "70%" }, 2000);
+  $('#back-bar').animate({ width: "50%" }, 2000);
   $('#design-bar').animate({ width: "40%" }, 2000);
   $('#english-bar').animate({ width: "20%" }, 2000);
 
   // Percent count
-  $({ counter: 1 }).animate({ counter: 80 }, {
+  $({ counter: 1 }).animate({ counter: 70 }, {
     duration: 1800,
     step : function(){
       $('#front-bar-count').text(Math.ceil(this.counter) + ' %');
     }
   });
 
-  $({ counter: 1 }).animate({ counter: 60 }, {
+  $({ counter: 1 }).animate({ counter: 50 }, {
     duration: 1800,
     step : function(){
       $('#back-bar-count').text(Math.ceil(this.counter) + ' %');
@@ -73,7 +73,7 @@ $(document).ready(function(){
       'width'        : 80,
       'height'       : 80,
       'fontWeight'   : 100,
-      'thickness'    : .2,
+      'thickness'    : .18,
       'fgColor'      : '#4a65ac',
       'bgColor'      : '#f9f9f9',
       'skin'         : 'tron',
