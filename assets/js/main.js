@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  new WOW().init();
+
   // Paralax effect
   var height = $(window).height();
   $(document).scroll(function(){

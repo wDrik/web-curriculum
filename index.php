@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.min.css">
   <link rel="stylesheet" href="assets/css/fontello.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
 
 </head>
 <body>
@@ -20,7 +21,7 @@
 <!-- Responsive Banner -->
 <section id="banner">
   <div id="banner-wrapper">
-    <div id="border">
+    <div id="border" class="wow fadeIn" data-wow-delay="1s">
       <div id="banner-content">
         <h1>Iorgen <span>Wildrik</span></h1>
         <h3>Desenvolvedor Web</h3>
@@ -53,12 +54,12 @@
 </nav>
 
 <!-- Perfil -->
-<section class="container title">
+<section class="container title wow fadeInUpBig">
   <h1>Perfil<span class="icon-attach-1"></span></h1>
   <h3>Bem-vindo ao meu Currículo online!</h3>
 </section>
 <section id="wrapper-perfil" class="container">
-  <div id="info">
+  <div id="info" class="wow fadeInLeftBig">
     <h4><span class="icon-ok"></span> Informações</h4>
     <ul>
       <li><span class="icon-user info-icons"></span> Iorgen Wildrik Souza Silva</li>
@@ -70,7 +71,7 @@
     <a href="" class="btn">Entrar em contato</a>
   </div>
 
-  <div id="social-network">
+  <div id="social-network" class="wow fadeIn" data-wow-delay="1s">
     <ul>
       <li><a target="_blank" href="https://www.linkedin.com/in/iorgen-wildrik-aa0270132/"><span class="icon-linkedin-2 icon-size"></span></a></li>
       <li><a target="_blank" href="https://github.com/wDrik"><span class="icon-github-circled-alt2 icon-size"></span></a></li>
@@ -78,7 +79,7 @@
     </ul>
   </div>
 
-  <div id="story">
+  <div id="story" class="wow fadeInRightBig">
     <h4><span class="icon-ok"></span> Sobre Mim</h4>
     <p>
       <b>Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse, aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis.</b>
@@ -90,11 +91,11 @@
 </section>
 
 <!-- Skills -->
-<section class="container title">
+<section class="container title wow fadeInUpBig">
   <h1>Habilidades<span class="icon-attach-1"></span></h1>
 </section>
 <section id="skills" class="container">
-  <div id="leftSkills">
+  <div id="leftSkills" class="wow slideInLeft">
     <h4><span class="icon-ok"></span> Habilidades</h4>
 
     <div class="progress-skill">
@@ -131,7 +132,7 @@
     </div>
   </div>
 
-  <div id="rightSkills">
+  <div id="rightSkills" class="wow slideInRight">
     <h4><span class="icon-ok"></span> Habilidades 2</h4>
 
     <div class="skills-wrapper">
@@ -183,10 +184,10 @@
 </section>
 
 <!-- Formation -->
-<section class="container title">
+<section class="container title wow fadeInUpBig">
   <h1>Formação<span class="icon-attach-1"></span></h1>
 </section>
-<section id="formation" class="container">
+<section id="formation" class="container wow fadeIn" data-wow-delay="1s">
   <div class="year-formation">
       <h3>2017 <span>/ 2020</span></h3>
   </div>
@@ -207,31 +208,32 @@
   <h1>Contato<span class="icon-attach-1"></span></h1>
 </section>
 <section id="contact" class="container">
-  <form>
-    <div class="form-group">
-      <input type="text" class="form-control" id="name" placeholder="Name*">
-      <input type="email" class="form-control" id="email" placeholder="E-mail*">
-      <input type="text" class="form-control" id="company" placeholder="Empresa">
+  <form id="sendMail">
+
+    <div class="form-group wow fadeInLeftBig">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Name*">
+      <input type="email" class="form-control" id="email" name="email" placeholder="E-mail*">
+      <input type="text" class="form-control" id="company" name="company" placeholder="Empresa">
     </div>
 
-    <div class="form-group">
-      <textarea class="form-control" id="message" placeholder="Message*"></textarea>
-      <button type="submit" class="btn btn-default">Enviar Mensagem</button>
-
+    <div class="form-group wow fadeInRightBig">
+        <textarea class="form-control" id="message" name="message" placeholder="Message*"></textarea>
+        <button type="submit" class="btn btn-default">Enviar Mensagem</button>
+        <div id="msg" class="alert alert-danger alert-dismissible fade show" role="alert"></div>
     </div>
 
   </form>
 </section>
 
 <!-- Map -->
-<div id="map">
+<div id="map" class="wow fadeIn">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.0254425330054!2d-47.193173485412224!3d-22.83854818504653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bec1e796efc7%3A0x777af4871ce619b!2sR.+Max%C3%ADmiano+Lopes%2C+Sumar%C3%A9+-+SP!5e0!3m2!1spt-BR!2sbr!4v1500742170938" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <!-- Footer -->
 <footer id="footer">
   <div id="top" class="container">
-    <ul>
+    <ul class="wow fadeInLeftBig">
       <li><a target="_blank" href="https://www.linkedin.com/in/iorgen-wildrik-aa0270132/"><span class="icon-linkedin-2 icon-size"></span></a></li>
       <li><a target="_blank" href="https://github.com/wDrik"><span class="icon-github-circled-alt2 icon-size"></span></a></li>
       <li><a target="_blank" href="https://pt.stackoverflow.com/users/33784/drik"><span class="icon-stackoverflow icon-size"></span></a></li>
@@ -255,6 +257,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/js/knob-plugin.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/mail.js"></script>
+<script src="assets/js/wow.min.js"></script>
 
 </body>
 </html>

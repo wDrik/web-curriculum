@@ -45,10 +45,10 @@ h1,h2,h3,h4 {
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
   background: $white;
-  margin-bottom: 0;
   border-bottom: 1px solid $light-gray;
   height: 72px;
   border-radius: 0;
+  margin-bottom: 20px;
 }
 .navbar-header {
   h4 {
@@ -72,16 +72,16 @@ h1,h2,h3,h4 {
     padding: 24px 14px;
     &:hover{
       color: $blue-theme;
-      border-bottom: 4px solid $blue-theme;
-      transition: 0.2s;
+      border-bottom: 3px solid $blue-theme;
+      transition: all ease 0.3s;
     }
   }
 }
 
 /*---------- Title ----------*/
 .title {
-  background: $white;
-  padding: 60px 0;
+  background: transparent;
+  padding: 40px 0;
   text-align: center;
 
   display: flex;
