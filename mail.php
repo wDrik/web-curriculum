@@ -1,5 +1,7 @@
 <?php
 
+    header("Content-type: text/html; charset=utf-8");
+
     $filter_rules = [
         'name' => FILTER_SANITIZE_STRING,
         'email' => FILTER_VALIDATE_EMAIL,
@@ -14,7 +16,7 @@
         ],
         'email' =>[
             'is_null'   => 'Preencha o campo <b>e-mail</b>!',
-            'is_false'  => 'O Campo <b>e-mail</b> não é valido!',
+            'is_false'  => 'O Campo <b>e-mail</b> não é valido!'
         ],
         'message' =>[
             'is_null'   => 'Preencha o campo <b>mensagem</b>!',
@@ -35,36 +37,34 @@
         }
     }
 
-
-    $subject = 'Assunto vem aqui';
+    $email_sender = 'w.drikss@gmail.com';
+    $subject = 'Proposta de emprego';
 
     // message
     $message = '
     <html>
-    <head>
-      <title>Titulo vem aqui</title>
-    </head>
-    <body>
-      <h3>Olá eu sou '. $name .' da '. $company .'</h3>
-      <p>'.$message.'</p>
-    </body>
+        <head>
+          <title>Proposta de emprego</title>
+        </head>
+        <body>
+          <h3>Olá eu sou '. $data['name'] .' da '. $data['company'] .'</h3>
+          <p>'.$data['message'].'</p>
+        </body>
     </html>
     ';
 
     // To send HTML mail, the Content-type header must be set
-    $headers  = 'MIME-Version: 1.0' . "\r\n";
-//    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $headers .= 'Content-type: text/html; charset=utf8' . "\r\n";
+    $headers  = 'MIME-Version: 1.1' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
     // Additional headers
-    $headers .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
-    $headers .= 'From: Birthday Reminder <birthday@example.com>' . "\r\n";
-    $headers .= 'Cc: birthdayarchive@example.com' . "\r\n";
-    $headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
+    $headers .= 'From: '. $email_sender ."\r\n";
+    $headers .= 'Return-Path: '. $email_sender ."\r\n";
+    $headers .= 'Reply-To: '. $data['email'] ."\r\n";
 
     // Mail it
-    if(mail('w.drik@outlook.com', $subject, $message, $headers)){
-        echo json_encode(["status"=>true, "msg"=>"Email enviado com <strong>sucesso</strong>!"]);exit;
+    if(mail('w.drik@outlook.com', $subject, $message, $headers, "-f$email_sender")){
+        echo json_encode(["status"=>true, "msg"=>"Mensagem enviada com <b>sucesso</b>! Favor aguardar retorno."]);exit;
     }else {
-        echo json_encode(["status"=>false, "msg"=>"Desculpe ocorreu um <strong>erro</strong>!"]);exit;
+        echo json_encode(["status"=>false, "msg"=>"Desculpe ocorreu um <b>erro</b>!"]);exit;
     }

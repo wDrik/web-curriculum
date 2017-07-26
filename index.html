@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="assets/css/fontello.css">
   <link rel="stylesheet" href="assets/css/animate.css">
 
-
 </head>
 <body>
 
+<!-- Preloader -->
 <div id="preloader"></div>
 
 <!-- Responsive Banner -->
@@ -34,7 +34,7 @@
   </div>
 </section>
 
-<!-- Fixed navbar -->
+<!-- Navigation -->
 <nav id="navigation" class="navbar navbar-default navbar-static">
   <div class="container">
     <div class="navbar-header">
@@ -58,19 +58,20 @@
 </nav>
 
 <!-- Perfil -->
-<div id="link-perfil" class="container title wow fadeInUpBig scroll">
-  <h1>Perfil<span class="icon-attach-1"></span></h1>
-  <h3>Bem-vindo ao meu Currículo online!</h3>
-</div>
 <section id="wrapper-perfil" class="container">
+  <div id="link-perfil" class="container title first-title wow fadeInUpBig scroll">
+    <h1>Perfil<span class="icon-attach-1"></span></h1>
+    <h3>Bem-vindo ao meu Currículo online!</h3>
+  </div>
+
   <div id="info" class="wow fadeInLeftBig">
     <h4><span class="icon-ok"></span> Informações</h4>
     <ul>
-      <li><span class="icon-user info-icons"></span> Iorgen Wildrik Souza Silva</li>
-      <li><span class="icon-location-2 info-icons"></span> Rua Maximiano Lopes - Sumaré/SP</li>
-      <li><span class="icon-birthday info-icons"></span> 28/05/1993</li>
-      <li><span class="icon-call info-icons"></span> (19)9 9999-9999 / (11)97026-7822</li>
-      <li><span class="icon-mail-alt info-icons"></span> w.drik@outlook.com</li>
+      <li><span class="icon-user"></span> Iorgen Wildrik Souza Silva</li>
+      <li><span class="icon-location-2"></span> Rua Maximiano Lopes - Sumaré/SP</li>
+      <li><span class="icon-birthday"></span> 28/05/1993</li>
+      <li><span class="icon-call"></span> (19)9 9999-9999 / (11)97026-7822</li>
+      <li><span class="icon-mail-alt"></span> w.drik@outlook.com</li>
     </ul>
     <a href="#link-contact" class="btn">Entrar em contato</a>
   </div>
@@ -95,10 +96,11 @@
 </section>
 
 <!-- Skills -->
-<div id="link-skills" class="container title wow fadeInUpBig scroll">
-  <h1>Habilidades<span class="icon-attach-1"></span></h1>
-</div>
 <section id="skills" class="container">
+  <div id="link-skills" class="container title wow fadeInUpBig scroll">
+    <h1>Habilidades<span class="icon-attach-1"></span></h1>
+  </div>
+
   <div id="leftSkills" class="wow slideInLeft">
     <h4><span class="icon-ok"></span> Habilidades</h4>
 
@@ -137,7 +139,7 @@
   </div>
 
   <div id="rightSkills" class="wow slideInRight">
-    <h4><span class="icon-ok"></span> Habilidades 2</h4>
+    <h4><span class="icon-ok"></span> Tecnologias</h4>
 
     <div class="skills-wrapper">
       <div>
@@ -145,7 +147,7 @@
         <p>HTML5</p>
       </div>
       <div>
-        <input value="75" class="dial">
+        <input value="80" class="dial">
         <p>CSS3</p>
       </div>
       <div>
@@ -207,20 +209,21 @@
 </section>
 
 <!-- Contact -->
-<div id="link-contact" class="container title wow fadeInUpBig scroll">
-  <h1>Contato<span class="icon-attach-1"></span></h1>
-</div>
-<section id="contact" class="container">
-  <form id="sendMail">
+<section id="contact" class="container wow fadeIn" data-wow-delay="1s">
+  <div id="link-contact" class="container title wow fadeInUpBig scroll">
+    <h1>Contato<span class="icon-attach-1"></span></h1>
+  </div>
 
-    <div class="form-group wow fadeInLeftBig">
-      <input type="text" class="form-control" id="name" name="name" placeholder="Name*">
+  <form id="sendMail" accept-charset="utf-8">
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Nome*">
       <input type="email" class="form-control" id="email" name="email" placeholder="E-mail*">
       <input type="text" class="form-control" id="company" name="company" placeholder="Empresa">
     </div>
 
-    <div class="form-group wow fadeInRightBig">
-      <textarea class="form-control" id="message" name="message" placeholder="Message*"></textarea>
+    <div class="form-group">
+      <textarea class="form-control" id="message" name="message" placeholder="Mensagem*"></textarea>
       <button type="submit" class="btn btn-default">Enviar Mensagem</button>
       <div id="msg" class="alert alert-danger alert-dismissible fade show" role="alert"></div>
     </div>

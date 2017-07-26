@@ -34,8 +34,10 @@ $(document).ready(function(){
 
     if(scrollTop >= 670){
       $('#navigation').addClass('navbar-fixed-top');
+      $('.first-title').css({'margin-top': '100px'})
     }else {
       $('#navigation').removeClass('navbar-fixed-top').addClass('navbar-static');
+      $('.first-title').css({'margin-top': '10px'})
     }
   });
 
