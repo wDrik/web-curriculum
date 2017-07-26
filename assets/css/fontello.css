@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?93728640');
-  src: url('../font/fontello.eot?93728640#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?93728640') format('woff2'),
-       url('../font/fontello.woff?93728640') format('woff'),
-       url('../font/fontello.ttf?93728640') format('truetype'),
-       url('../font/fontello.svg?93728640#fontello') format('svg');
+  src: url('../font/fontello.eot?64807945');
+  src: url('../font/fontello.eot?64807945#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?64807945') format('woff2'),
+       url('../font/fontello.woff?64807945') format('woff'),
+       url('../font/fontello.ttf?64807945') format('truetype'),
+       url('../font/fontello.svg?64807945#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?93728640#fontello') format('svg');
+    src: url('../font/fontello.svg?64807945#fontello') format('svg');
   }
 }
 */
@@ -92,6 +92,7 @@
 .icon-graduation-cap-2:before { content: '\e822'; } /* '' */
 .icon-up-dir:before { content: '\e823'; } /* '' */
 .icon-up-open:before { content: '\e824'; } /* '' */
+.icon-down-dir:before { content: '\e825'; } /* '' */
 .icon-location-1:before { content: '\f031'; } /* '' */
 .icon-github-circled-alt2:before { content: '\f056'; } /* '' */
 .icon-linkedin-circled-1:before { content: '\f05b'; } /* '' */
@@ -100,11 +101,14 @@
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-angle-double-up:before { content: '\f102'; } /* '' */
+.icon-angle-double-down:before { content: '\f103'; } /* '' */
 .icon-angle-up:before { content: '\f106'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
 .icon-direction:before { content: '\f124'; } /* '' */
 .icon-info:before { content: '\f129'; } /* '' */
 .icon-angle-circled-up:before { content: '\f139'; } /* '' */
+.icon-angle-circled-down:before { content: '\f13a'; } /* '' */
 .icon-css3:before { content: '\f13c'; } /* '' */
 .icon-stackoverflow:before { content: '\f16c'; } /* '' */
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */

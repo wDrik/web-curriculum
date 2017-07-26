@@ -26,21 +26,20 @@ h1,h2,h3,h4 {
 .icon-github-circled-alt2 {color: #24292e}
 .icon-stackoverflow {color: #f48024}
 
-
-/*---------- Go Top ----------*/
-#goTop {
-  display: none;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 100%;
-  color: $white;
-  font-size: 1.2em;
-  position: fixed;
-  right: 20px;
-  bottom: 10px;
-  padding: 8px;
+#msg {
+  margin-top: 10px;
 }
 
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: $white url("../img/loading.gif") no-repeat center center;
+  background-size: 80px;
+}
 
 /*---------- Main Bootstrap ----------*/
 .navbar-default{
@@ -48,7 +47,7 @@ h1,h2,h3,h4 {
   border-bottom: 1px solid $light-gray;
   height: 72px;
   border-radius: 0;
-  margin-bottom: 20px;
+  z-index: 98;
 }
 .navbar-header {
   h4 {
@@ -91,6 +90,7 @@ h1,h2,h3,h4 {
   h1 {
     width: 400px;
     padding: 30px 0;
+    margin-top: 20px;
     border-bottom: 1px solid $light-gray;
     font-weight: 200;
     position: relative;
@@ -162,5 +162,22 @@ h1,h2,h3,h4 {
     justify-content: center;
     align-items: center;
     color: $white;
+  }
+}
+
+/*---------- Go Top ----------*/
+#goTop {
+  display: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  color: $white;
+  font-size: 1.2em;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  padding: 8px;
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
   }
 }

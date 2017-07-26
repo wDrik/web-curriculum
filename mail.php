@@ -35,37 +35,26 @@
         }
     }
 
-    // Recipients
-    $to  = 'w.drik@outlook.com';
 
-    $subject = 'new test kkkk';
+    $subject = 'Assunto vem aqui';
 
     // message
     $message = '
     <html>
     <head>
-      <title>Birthday Reminders for August</title>
+      <title>Titulo vem aqui</title>
     </head>
     <body>
-      <p>Here are the birthdays upcoming in August!</p>
-      <table>
-        <tr>
-          <th>Person</th><th>Day</th><th>Month</th><th>Year</th>
-        </tr>
-        <tr>
-          <td>Joe</td><td>3rd</td><td>August</td><td>1970</td>
-        </tr>
-        <tr>
-          <td>Sally</td><td>17th</td><td>August</td><td>1973</td>
-        </tr>
-      </table>
+      <h3>Olá eu sou '. $name .' da '. $company .'</h3>
+      <p>'.$message.'</p>
     </body>
     </html>
     ';
 
     // To send HTML mail, the Content-type header must be set
     $headers  = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+//    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=utf8' . "\r\n";
 
     // Additional headers
     $headers .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
@@ -74,7 +63,7 @@
     $headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
 
     // Mail it
-    if(mail($to, $subject, $message, $headers)){
+    if(mail('w.drik@outlook.com', $subject, $message, $headers)){
         echo json_encode(["status"=>true, "msg"=>"Email enviado com <strong>sucesso</strong>!"]);exit;
     }else {
         echo json_encode(["status"=>false, "msg"=>"Desculpe ocorreu um <strong>erro</strong>!"]);exit;
