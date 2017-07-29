@@ -89,23 +89,24 @@
 /*---------- Perfil ----------*/
 #wrapper-perfil{
   background: $white;
-  display: flex;
-  flex-wrap: wrap;
   padding: 20px 0;
 
+  display: flex;
+  flex-wrap: wrap;
+
   #info {
-    width: 45%;
-    position: relative;
+    width: 40%;
     h4 {
       text-align: center;
       font-weight: 100;
-      padding: 12px 0;
+      padding: 20px 0;
     }
     ul {
       border: 1px solid $light-gray;
-      padding: 40px;
+      padding: 44px;
       li{
         text-align: left;
+        font-size: 1.1em;
       }
     }
     a {
@@ -114,9 +115,9 @@
       border: 1px solid $light-gray;
       padding: 10px 18px;
       color: $blue-theme;
-      position: absolute;
-      bottom: 4px;
-      left: 37%;
+      position: relative;
+      bottom: 30px;
+      left: 35%;
       &:hover {
         background: $light;
         color: $blue-theme;
@@ -126,7 +127,7 @@
   }
 
   #social-network{
-    width: 10%;
+    width: 12%;
     padding-top: 60px;
     h4 {
       text-align: center;
@@ -143,16 +144,23 @@
   }
 
   #story {
-    width: 45%;
+    width: 44%;
+
     h4 {
       text-align: center;
       font-weight: 100;
       padding: 20px 0;
     }
+    p {
+      font-weight: 100;
+    }
+    .bold {
+      font-weight: 500;
+    }
   }
 
   #info,#story{
-    padding: 0 40px;
+    padding: 0 30px;
     color: $light-dark;
   }
 }
@@ -237,32 +245,33 @@
   display: flex;
   justify-content: center;
   background: $light;
-  padding: 20px 0;
+  padding: 60px 0;
 
   .year-formation{
-    width: 33%;
+    width: 38%;
     height: auto;
-    padding-right: 20px;
+    padding-right: 30px;
     border-right: 1px solid $light-gray;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
     h3 {
+      font-size: 2.4em;
       span {
-        font-size: 0.7em;
+        font-size: 0.6em;
         color: $gray;
       }
     }
   }
   .course {
-    width: 67%;
+    width: 62%;
     height: auto;
-    padding: 20px;
+    padding: 30px;
 
     ul {
       li {
-        font-size: 1.2em;
+        font-size: 1.3em;
         color: $light-dark;
         font-weight: 200;
 
@@ -278,10 +287,10 @@
     border-radius: 100%;
     background: $light-gray;
     color: $blue-theme;
-    font-size: 1.2em;
+    font-size: 2.2em;
     position: relative;
-    left: -14px;
-    top: -10px;
+    left: -26px;
+    top: -20px;
   }
 }
 
@@ -317,6 +326,7 @@
         border: 1px solid $light-gray;
         padding: 10px 18px;
         color: $blue-theme;
+
         &:hover {
           background: $light;
           color: $blue-theme;

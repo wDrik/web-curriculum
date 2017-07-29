@@ -17,15 +17,15 @@ $(document).ready(function(){
     }
   });
 
+  // Banner scroll
   $(document).scroll(function(){
     var scrollTop = $(this).scrollTop();
 
-    if(scrollTop >= 10){
+    if(scrollTop >= 100){
       $('.icon-fade-scroll').fadeOut();
     }else {
       $('.icon-fade-scroll').fadeIn();
     }
-
   });
 
   // Navigation Script
@@ -45,46 +45,46 @@ $(document).ready(function(){
   var checkAnimate = false;
   $(document).scroll(function() {
     var scrollTop = $(this).scrollTop();
-    if(scrollTop > 760 && checkAnimate == false) {
+    if(scrollTop > 800 && checkAnimate == false) {
       checkAnimate = true;
-      $('#front-bar').animate({ width: "70%" }, 2000);
-      $('#back-bar').animate({ width: "50%" }, 2000);
-      $('#design-bar').animate({ width: "40%" }, 2000);
-      $('#english-bar').animate({ width: "20%" }, 2000);
+      $('#front-bar').animate({ width: "70%" }, 2600);
+      $('#back-bar').animate({ width: "50%" }, 2600);
+      $('#design-bar').animate({ width: "40%" }, 2600);
+      $('#english-bar').animate({ width: "20%" }, 2600);
 
       // Percent count
       $({ counter: 0 }).animate({ counter: 70 }, {
-        duration: 1800,
+        duration: 2600,
         step : function(){
           $('#front-bar-count').text(Math.ceil(this.counter) + ' %');
         }
       });
 
       $({ counter: 0 }).animate({ counter: 50 }, {
-        duration: 1800,
+        duration: 2600,
         step : function(){
           $('#back-bar-count').text(Math.ceil(this.counter) + ' %');
         }
       });
 
       $({ counter: 0 }).animate({ counter: 40 }, {
-        duration: 1800,
+        duration: 2600,
         step : function(){
           $('#design-bar-count').text(Math.ceil(this.counter) + ' %');
         }
       });
 
       $({ counter: 1 }).animate({ counter: 20 }, {
-        duration: 1800,
+        duration: 2600,
         step : function(){
           $('#english-bar-count').text(Math.ceil(this.counter) + ' %');
         }
       });
 
+
       // Animate Progress Bar Circle
       $('.dial').each(function () {
         var elm   = $(this);
-        // var color = elm.attr("data-fgColor");
         var perc  = elm.attr("value");
 
         elm.knob({
@@ -95,18 +95,19 @@ $(document).ready(function(){
           'height'       : 80,
           'fontWeight'   : 100,
           'thickness'    : .18,
-          'fgColor'      : '#4a65ac',
+          'fgColor'      : '#1d99ae',
           'bgColor'      : '#f9f9f9',
           'skin'         : 'tron',
-          'inputColor'   : '#666',
+          'inputColor'   : '#999',
           'linecap'      : 'round',
+          'tickColorizeValues': true,
           'readOnly'     : true,
           'dynamicDraw'  : true,
           'displayInput' : true
         });
 
         $({value: 0}).animate({ value: perc}, {
-          duration : 2000,
+          duration : 2600,
           easing   : 'swing',
           progress : function () {
             elm.val(Math.ceil(this.value)).trigger('change')
@@ -116,13 +117,11 @@ $(document).ready(function(){
     }
   });
 
-
   // Script for scrolls -> use the class .scroll to active
   $(".scroll").click(function(e){
     e.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1400);
   });
-
 
   // Go top Fade In
   $(window).scroll(function(){

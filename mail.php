@@ -42,16 +42,16 @@
 
     // message
     $message = '
-    <html>
-        <head>
-          <title>Proposta de emprego</title>
-        </head>
-        <body>
-          <h3>Olá eu sou '. $data['name'] .' da '. $data['company'] .'</h3>
-          <p>'.$data['message'].'</p>
-        </body>
-    </html>
-    ';
+        <html>
+            <head>
+              <title>Proposta de emprego</title>
+            </head>
+            <body>
+              <h3>'. $data['name'] .' da empresa '. $data['company'] .'</h3>
+              <p>'.$data['message'].'</p>
+            </body>
+        </html>
+        ';
 
     // To send HTML mail, the Content-type header must be set
     $headers  = 'MIME-Version: 1.1' . "\r\n";
@@ -64,7 +64,7 @@
 
     // Mail it
     if(mail('w.drik@outlook.com', $subject, $message, $headers, "-f$email_sender")){
-        echo json_encode(["status"=>true, "msg"=>"Mensagem enviada com <b>sucesso</b>! Favor aguardar retorno."]);exit;
+        echo json_encode(["status"=>true, "msg"=>"Mensagem enviada com <b>sucesso</b>!"]);exit;
     }else {
         echo json_encode(["status"=>false, "msg"=>"Desculpe ocorreu um <b>erro</b>!"]);exit;
     }
