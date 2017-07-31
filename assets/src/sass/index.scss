@@ -88,7 +88,6 @@
 
 /*---------- Perfil ----------*/
 #wrapper-perfil{
-  background: $white;
   padding: 20px 0;
 
   display: flex;
@@ -129,11 +128,6 @@
   #social-network{
     width: 12%;
     padding-top: 60px;
-    h4 {
-      text-align: center;
-      font-weight: 100;
-      padding: 20px 0;
-    }
 
     ul {
       text-align: center;
@@ -349,3 +343,73 @@
     border: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+
+  /*---------- Perfil ----------*/
+  #wrapper-perfil{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    #info {
+      width: 100%;
+
+      ul {
+        padding: 22px;
+      }
+      a {
+        display: none;
+      }
+    }
+
+    #social-network{
+      width: 100%;
+      padding: 20px 0 40px;
+
+      ul {
+        display: flex;
+        .icon-size {
+          font-size: 2.8em;
+        }
+      }
+    }
+
+    #story {
+      width: 100%;
+      text-align: center;
+    }
+
+    #info,#story{
+      padding: 0 20px;
+      color: $light-dark;
+    }
+  }
+
+  /*---------- Skills ----------*/
+  #skills{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    #leftSkills {
+      width: 100%;
+      height: auto;
+
+      .progress-skill {
+        width: 90%;
+      }
+    }
+
+    #rightSkills {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    //background: red;
+  }
+}
+
